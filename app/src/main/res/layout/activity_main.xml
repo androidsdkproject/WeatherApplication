@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3F51B5"
+   >
+
+    <RelativeLayout
+        android:background="#8995d6"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        >
+    <EditText
+        android:textCursorDrawable="@color/background"
+        android:layout_marginStart="5sp"
+        android:layout_marginLeft="5sp"
+        android:padding="5sp"
+        android:layout_centerVertical="true"
+        android:layout_width="250sp"
+        android:textSize="17sp"
+        android:layout_height="50sp"
+        android:hint="Enter Your City"
+        android:background="#ffffff"
+        android:id="@+id/city"
+        />
+
+        <ImageButton
+            android:background="#ffffff"
+            android:id="@+id/citybutton"
+            android:layout_marginLeft="220sp"
+            android:layout_width="30sp"
+            android:layout_height="50sp"
+            android:src="@drawable/ic_search_black_24dp"
+            android:layout_centerVertical="true"
+            />
+
+    <ImageButton
+        android:background="@android:color/transparent"
+        android:layout_centerVertical="true"
+        android:layout_width="30sp"
+        android:layout_marginLeft="10sp"
+        android:layout_toEndOf="@+id/city"
+        android:layout_toRightOf="@+id/city"
+        android:layout_height="50sp"
+        android:src="@drawable/ic_refresh_black_24dp"
+        android:id="@+id/Refresh"
+         />
+
+      <ImageButton
+          android:layout_toEndOf="@+id/Refresh"
+          android:layout_toRightOf="@+id/Refresh"
+          android:layout_marginLeft="10sp"
+          android:layout_centerVertical="true"
+          android:id="@+id/currentlocation"
+          android:src="@drawable/ic_my_location_black_24dp"
+          android:background="@android:color/transparent"
+          android:layout_width="30sp"
+          android:layout_height="50sp" />
+
+ <ImageButton
+     android:layout_centerVertical="true"
+     android:layout_width="30sp"
+     android:id="@+id/menu_item"
+     android:background="@android:color/transparent"
+     android:layout_height="50sp"
+     android:src="@drawable/ic_menu_black_24dp"
+     android:layout_alignParentRight="true"
+     />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20sp">
+
+        <TextView
+            android:id="@+id/city_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="35sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/updated_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city_field"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/weather_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updated_field"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="120sp" />
+
+        <TextView
+            android:id="@+id/details_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weather_icon"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/humidity_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/details_field"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/pressure_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/humidity_field"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/current_temperature_field"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pressure_field"
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

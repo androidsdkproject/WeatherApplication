@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context="com.example.android1.weatherapplication.SplashActivity">
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:background="@android:color/transparent"
+        android:layout_width="300sp"
+        android:layout_height="300sp"
+        android:layout_marginTop="80sp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/image" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:textStyle="bold|italic"
+        android:textSize="40dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/imgLogo"
+        android:gravity="center_horizontal"
+        android:text="Weather Application" />
+</RelativeLayout>
